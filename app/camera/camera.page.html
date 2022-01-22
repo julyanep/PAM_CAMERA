@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Camera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button expand="full" (click)="tirarFoto()">Foto</ion-button>
+  <ion-button expand="full" (click)="filmar()">Video</ion-button>
+
+  <ion-card [hidden]=! img>
+    <ion-item>
+      <img [src]=img alt="">
+    </ion-item>
+
+</ion-content>
